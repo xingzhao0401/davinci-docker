@@ -4,7 +4,7 @@ LABEL MAINTAINER="ccccccc"
 
 ARG DAVINCI_ZIP=davinci-assembly_0.3.1-0.3.1-SNAPSHOT-dist-rc.zip
 
-RUN cd / \
+RUN apt update && apt install -y wget zip unzip &&cd / \
 	&& mkdir -p /opt/davinci \
 	&& wget https://github.com/edp963/davinci/releases/download/v0.3.0-rc/$DAVINCI_ZIP \
 	&& unzip $DAVINCI_ZIP -d /opt/davinci\
