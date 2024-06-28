@@ -7,7 +7,7 @@ ARG DAVINCI_ZIP=davinci-assembly_0.3.1-0.3.1-SNAPSHOT-dist-rc.zip
 RUN cd / \
 	&& mkdir -p /opt/davinci \
 	&& wget https://github.com/edp963/davinci/releases/download/v0.3.0-rc/$DAVINCI_ZIP \
-	&& tar -xf $DAVINCI_ZIP -d /opt/davinci\
+	&& unzip $DAVINCI_ZIP -d /opt/davinci\
 	&& rm -rf $DAVINCI_ZIP \
 	&& cp -v /opt/davinci/config/application.yml.example /opt/davinci/config/application.yml
 
