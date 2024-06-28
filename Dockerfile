@@ -1,4 +1,4 @@
-FROM  openjdk:8u242-jdk AS base
+FROM  dragonwell-registry.cn-hangzhou.cr.aliyuncs.com/dragonwell/dragonwell:8 AS base
 
 LABEL MAINTAINER="ccccccc"
 
