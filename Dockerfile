@@ -1,6 +1,6 @@
 FROM  openjdk:8u242-jdk AS base
 
-LABEL MAINTAINER="edp_support@groups.163.com"
+LABEL MAINTAINER="ccccccc"
 
 ARG DAVINCI_ZIP=davinci-assembly_0.3.1-0.3.1-SNAPSHOT-dist-rc.zip
 
